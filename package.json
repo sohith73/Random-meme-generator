@@ -1,4 +1,5 @@
 {
+  "homepage": "https://sohith73.github.com/Random-meme-generator",
   "name": "random-gif",
   "version": "0.1.0",
   "private": true,
@@ -14,7 +15,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -35,6 +38,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.1.0",
     "tailwindcss": "^3.2.7"
   }
 }
